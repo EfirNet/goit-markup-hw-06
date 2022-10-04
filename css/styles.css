@@ -840,6 +840,7 @@ padding-bottom: 60px;
 .container.baseline {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .footer-logo {
