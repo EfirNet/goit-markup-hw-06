@@ -127,6 +127,12 @@ padding-bottom: 0;
     justify-content: center;
     cursor: pointer;
     z-index: 2;
+    transition: fill 250ms var(--timing-function);
+}
+
+.close:hover {
+    fill: var(--accent-color);
+    color: currentColor;
 }
 
 .backdrop.is-hidden {
@@ -229,6 +235,11 @@ color: rgba(117, 117, 117, 0.5);
 fill: var(--accent-color);
 }
 
+.form__input:hover,
+.form__textarea:hover {
+    cursor: pointer;
+}
+
 .form__input:focus,
 .form__textarea:focus {
     border: 1px solid var(--accent-color);
@@ -270,6 +281,12 @@ cursor: pointer;
     letter-spacing: 0.03em;
     color: var(--prmary-text-color);
 }
+
+.privacy__link {
+    border-bottom: 1px solid var(--accent-color);
+    color: var(--accent-color);
+   }
+
 
 .privacy__icon {
     display: inline-block;
